@@ -1,0 +1,276 @@
+/* general styling */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ html{
+	font-size:20px;
+}
+body {
+	font-family: arial,sana-serif;
+	line-height: 1.4;
+	color: #333;
+	overflow-x: hidden;
+}
+/* utility clases */
+.container{
+	margin: auto;
+}
+.text-primary{
+	color:#3693ff;
+}
+
+.bg-light {
+	background:#f4f4f4;
+	color: #333;
+}
+
+/* navbar */
+#navbar{
+	display: flex;
+	justify-content: space-between;
+	background: #333;
+	color: #fff;
+	padding:1.5rem 8rem;
+	top:0;
+	z-index: 1;
+	border-bottom: 3px solid #3693ff; 
+}
+
+#navbar ul{
+	display: flex;
+	align-items: center;
+	list-style: none;
+}
+
+#navbar h2 a{
+	color: #fff;
+	text-decoration: none;
+}
+
+#navbar li a{
+	text-decoration: none;
+	color:#fff;
+	padding: 1rem;
+	font-size: 1.3rem;
+	margin: 0 0.5rem;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+}
+
+#navbar li a:hover {
+	background-color: #3693ff;
+}
+
+/* Showcase area */
+
+#showcase{
+	background: url(../img/photo-1484417894907-623942c8ee29.jpeg)no-repeat center center/cover;
+	height: 91.7vh;
+}
+
+.showcase-content {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 81px;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(0,0,0,0,0.6);
+	color: #fff;
+
+}
+
+.showcase-content h1 {
+	font: 4rem;
+	margin-bottom: 2rem;
+
+}
+
+.showcase-content .btn {
+	font-size: 1.5rem;
+	padding: 1rem 10rem;
+	transition:color "0.3s","backgroundS"0.3s;
+}
+
+
+.showcase-content .btn:hover {
+	background: #3693ff;
+	color: #fff;
+}
+.btn {
+	color: #3693ff;
+	text-decoration: none;
+	display: inline-block;
+	padding: 1rem 2rem;
+	border: 1px solid #3693ff;
+	border-radius: 10px;
+	font-weight: bold;
+
+}
+
+/* SECTION ABOUT*/
+
+#about h2 {
+	padding: 5rem;
+}
+#about h2,#services h2 { 
+	text-align: center;
+	font-size: 3rem;
+	margin-bottom: 3rem;
+}
+
+#about h3 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+
+}
+
+#about p.lead {
+	margin-bottom: 1rem;
+}
+
+#about .about-content {
+	display: flex;
+}
+
+#about .about-text,
+#about .about-image {
+	flex: 1;
+}
+
+#about .about-text {
+	text-align: center;
+}
+
+#about .about-image img {
+	display: block;
+	margin-left: auto;
+	width: 75%;
+	border-radius: 40%;
+	margin-top: 60px;
+}
+
+/* sectioN:services */
+
+#services {
+	padding: 5rem 0;
+}
+
+#services h3 {
+	text-align: center;
+	margin-bottom: 2rem;
+	font-size: 2rem;
+}
+
+#services.boxes{
+	display: flex;
+}
+
+#services.box {
+	background: #fff;
+	flex: 1;
+	padding: 3rem;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px #d1d1d1;
+	font-size: 1.3rem;
+}
+
+#services.box i {
+	color:#fff;
+	padding: 1rem;
+	background: #3693ff;
+	border-radius: 50%;
+	margin: 0 1rem ;
+	margin-bottom: 2rem;
+}
+
+/* section:testimonials*/
+
+/* #testimonials {
+	
+	height: 100vh;
+} */
+.testimonials-bg {
+	background-image:url('../img/RedDefensiveBullfrog-small.gif');
+	height: 100vh;
+	position: absolute;
+	width:100%;
+	background: rgba(0,0,0,0,0.6);
+	padding:5rem 0;
+
+}
+
+#testmonials h2 {
+	text-align: center;
+	font-size: 3rem;
+	margin-bottom: 3rem;
+	color: #fff;
+}
+
+#testimonials.boxes {
+	display: flex;
+	flex-direction: column;
+
+}
+
+
+.about-content .about-text{
+	width: 1500px;
+	height: 500px;
+	position: relative;
+	left: 100px;
+}
+.about-content .abou-image{
+	float: right;
+}
+
+/* Dropdown Button */
+.dropbtn {
+	background-color:#333333;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+	position: relative;
+	display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3693ff;}
+
+/* {.testimonials-bg */
